@@ -1,0 +1,81 @@
+.services-page {
+  background-color: #0a0a0a;
+  color: white;
+  padding: 60px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.services-heading {
+  font-size: 3.3rem;
+  text-align: center;
+  color: #00ffff;
+  margin-bottom: 40px;
+}
+
+
+.services-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.card {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  color: #00ffff;
+}
+
+.card:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+
+.service-qa {
+  background-color: #111;
+  padding: 40px 20px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 0 auto 60px;
+}
+
+.service-qa h3 {
+  font-size: 2rem;
+  color: #00ffff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.service-qa p {
+  margin: 15px 0;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .services-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+}

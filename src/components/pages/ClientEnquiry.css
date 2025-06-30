@@ -1,0 +1,95 @@
+.client-top {
+  background-color: rgb(6, 1, 1);
+  color: rgb(240, 242, 243);
+  text-align: center;
+  padding: 80px 20px 40px;
+  min-height: 70px;
+}
+
+.client-top h1 {
+  font-size: 3.2rem;
+  line-height: 1.4;
+  text-shadow: 0 0 5px #0ff;
+}
+
+.client-form-wrapper {
+  background-color: rgb(14, 12, 12);
+  padding: 50px 20px;
+}
+
+.form-title {
+  text-align: center;
+  color: #00cfff;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  text-shadow: 0 0 5px #0ff;
+}
+
+.client-form-simple {
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  background-color: rgb(44, 41, 41);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.15);
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-row input,
+.form-row textarea {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  background: #2c2c2c;
+  color: white;
+  font-size: 1rem;
+}
+
+.form-row input::placeholder,
+.form-row textarea::placeholder {
+  color: #aaa;
+}
+
+.client-form-simple button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #00cfff;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.client-form-simple button:hover {
+  background-color: #08a9d2;
+}
+@media (max-width: 768px) {
+  .client-top h1 {
+    font-size: 2.2rem;
+  }
+
+  .client-form-simple {
+    padding: 20px;
+  }
+
+  .form-row input,
+  .form-row textarea {
+    font-size: 0.95rem;
+    padding: 12px;
+  }
+
+  .client-form-simple button {
+    padding: 12px;
+  }
+}

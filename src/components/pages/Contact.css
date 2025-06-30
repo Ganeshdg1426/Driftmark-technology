@@ -1,0 +1,123 @@
+.contact-page {
+  width: 100%;
+  color: white;
+  background-color: #1f1b1b;
+  padding-top: 60px;
+}
+
+/* Top Hero */
+.contact-hero {
+  background-color: rgb(18, 17, 17);
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.contact-hero h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  flex-wrap: wrap;
+}
+
+.contact-hero .small {
+  font-size: 2rem;
+  text-transform: lowercase;
+  margin-right: 10px;
+  color: #00d9ff;
+}
+
+.contact-hero .big {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #00d9ff;
+}
+
+.contact-main {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+
+.contact-left,
+.contact-right {
+  flex: 1 1 45%;
+  min-width: 280px;
+}
+
+.contact-left img {
+  width: 100%;
+  height: 100%;
+  max-height: 600px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.contact-right h2 {
+  margin-bottom: 1rem;
+  color: #00d9ff;
+  font-size: 1.5rem;
+}
+
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-right input,
+.contact-right textarea {
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  background: white;
+  color: black;
+}
+
+.contact-right textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-right button {
+  background-color: #00d9ff;
+  color: black;
+  font-weight: bold;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-right button:hover {
+  background-color: #008cb4;
+}
+
+
+@media (max-width: 992px) {
+  .contact-main {
+    flex-direction: column;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 100%;
+  }
+
+  .contact-hero h1 {
+    font-size: 2rem;
+  }
+
+  .contact-hero .big {
+    font-size: 2.3rem;
+  }
+}

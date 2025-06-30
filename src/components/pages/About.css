@@ -1,0 +1,51 @@
+.about-page {
+  width: 100%;
+  overflow-x: hidden;
+  padding-top: 50px;
+}
+
+.about-hero-image img {
+  width: 100%;
+  height: auto;
+  max-height: 60vh;
+  object-fit: cover;
+  display: block;
+}
+
+
+.about-text-section {
+  min-height: 20vh;
+  background-color: #111;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+}
+
+.about-text-section h2 {
+  font-size: 2.8rem;
+  color: #00ffff;
+  margin-bottom: 20px;
+}
+
+.about-text-section p {
+  font-size: 1.2rem;
+  color: #ccc;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .about-text-section h2 {
+    font-size: 2rem;
+  }
+
+  .about-text-section p {
+    font-size: 1rem;
+  }
+}
